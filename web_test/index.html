@@ -5,7 +5,7 @@
 <html>
 
     <body>
-         <h6>Version 0.0.1-1</h6>
+         <h6>Version 0.0.1-2</h6>
         <button id="connect_usb">CONNECT (USB)</button>
         <input id="msg_usb"><button id="send_usb">SEND ALL (USB)</button><br>
         <button id="connect_ble">CONNECT (BLE)</button>
@@ -22,7 +22,7 @@
 
         const _DongleTempUSBID = {
             VID: 0x2341,   // nordic nrf52840 0x2fe3,    //   arduino  id=2341
-            PID: 0x02fB   // nordic nrf52840  0x0100     //  arduino portenta  025B
+            PID: 0x025B   // nordic nrf52840  0x0100     //  arduino portenta  025B
         }
 
         const readFromDevice = (device) => {
