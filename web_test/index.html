@@ -52,13 +52,13 @@
 
         const openUSBDevice = async (device) => {
             await device.open();
-            await device.selectConfiguration(1);
+            await device.selectConfiguration(1);   // what does it do
            // await device.claimInterface(0);
             console.log('device.configuration.interfaces[0].interfaceNumber')
             console.log(device.configuration.interfaces[0].interfaceNumber)
           //  await device.claimInterface(device.configuration.interfaces[0].interfaceNumber);
-          //  await device.claimInterface(0);
-            await device.claimInterface(1);
+            await device.claimInterface(0);   // not working
+           // await device.claimInterface(1);
 
             const deviceId = `${device.serialNumber}`;
 
