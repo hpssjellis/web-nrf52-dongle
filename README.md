@@ -1,3 +1,13 @@
+testing by @rocksetta
+
+june 2022
+
+https://hpssjellis.github.io/web-nrf52-dongle/web_app/index.html
+
+
+
+
+
 # Workshop on Web Bluetooth, Web USB, LitElement and Zephyr
 
 ## Making a future proof IoT project by leveraging great technologies
