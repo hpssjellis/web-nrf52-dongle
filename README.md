@@ -1,8 +1,8 @@
 testing by @rocksetta
 
 june 2022
-
-https://hpssjellis.github.io/web-nrf52-dongle/web_app/index.html
+[
+https://hpssjellis.github.io/web-nrf52-dongle/web_app/index.html](https://hpssjellis.github.io/web-nrf52-dongle/web_test/index.html)
 
 
 
