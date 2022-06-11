@@ -5,7 +5,7 @@
 <html>
 
     <body>
-         <h6>Version 0.0.1-2</h6>
+         <h6>Version 0.0.2-3</h6>
         <button id="connect_usb">CONNECT (USB)</button>
         <input id="msg_usb"><button id="send_usb">SEND ALL (USB)</button><br>
         <button id="connect_ble">CONNECT (BLE)</button>
@@ -53,7 +53,10 @@
         const openUSBDevice = async (device) => {
             await device.open();
             await device.selectConfiguration(1);
-            await device.claimInterface(0);
+           // await device.claimInterface(0);
+            console.log('device.configuration.interfaces[0].interfaceNumber')
+            console.log(device.configuration.interfaces[0].interfaceNumber)
+            await device.claimInterface(device.configuration.interfaces[0].interfaceNumber);
 
             const deviceId = `${device.serialNumber}`;
 
